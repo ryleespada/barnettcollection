@@ -50,12 +50,12 @@ input[type="file"] {
 
 h2 {
     margin-top: 30px;
-    font-size: 3em
+    font-size: 3em;
     text-align: center;
 }
 
 #detectedLocation {
-    font-size: clamp(26px, 3vw, 38px);
+    font-size: 1.7em;
     font-weight: bold;
 }
 
