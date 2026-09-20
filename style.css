@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #000000;
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+
+    padding: 40px 20px;
+}
+
+h1 {
+    margin: 20px 0 30px;
+    text-align: center;
+    font-size: clamp(36px, 5vw, 60px);
+}
+
+p {
+    font-size: clamp(22px, 2.5vw, 30px);
+    line-height: 1.5;
+    text-align: center;
+}
+
+input[type="file"] {
+    font-size: 22px;
+    margin: 25px 0;
+    max-width: 100%;
+}
+
+#photoPreview {
+    display: none;
+
+    width: auto;
+    max-width: min(900px, 90vw);
+    max-height: 60vh;
+
+    margin: 30px auto;
+
+    object-fit: contain;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: clamp(28px, 3vw, 40px);
+    text-align: center;
+}
+
+#detectedLocation {
+    font-size: clamp(26px, 3vw, 38px);
+    font-weight: bold;
+}
+
+button {
+    min-width: 250px;
+    min-height: 70px;
+
+    margin: 25px 10px;
+    padding: 18px 32px;
+
+    border: 3px solid #ffffff;
+    border-radius: 8px;
+
+    background-color: #ffffff;
+    color: #000000;
+
+    font-size: 26px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+button:not(:disabled):hover,
+button:not(:disabled):focus {
+    background-color: #000000;
+    color: #ffffff;
+}
