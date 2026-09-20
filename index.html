@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Collection Item Matcher</title>
+</head>
+
+<body>
+
+    <h1>Collection Item Matcher</h1>
+
+    <p>Take or upload a photograph of a collection item.</p>
+
+    <input
+        type="file"
+        id="photoInput"
+        accept="image/*"
+    >
+
+    <div>
+        <img
+            id="photoPreview"
+            alt="Photograph preview"
+            style="display: none; max-width: 500px;"
+        >
+    </div>
+
+    <h2>Detected location</h2>
+
+    <p id="detectedLocation">
+        No location detected yet.
+    </p>
+
+    <button id="findMatchButton" disabled>
+        Find Match
+    </button>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
